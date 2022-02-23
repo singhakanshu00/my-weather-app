@@ -1,0 +1,144 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+* {
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h2{
+    font-size: 20px;
+}
+section{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area{
+    width: 80%;
+    height: 350px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding-top: 4%;
+}
+.form-select{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+input{
+    width: 70%;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: solid 3px rgba(0, 0, 0, 0.5);
+    /* box-shado */
+}
+button{
+    width: 25%;
+    margin-right: 5px;
+    border: solid 2px #7a631b;
+    border-radius: 5px;
+}
+.weatherIcon{
+    width: 100%;
+    height: 60%;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    font-size: 80px;
+}
+p{
+    color: #fff;
+    font-size: 23px;
+}
+.output{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(51, 48, 48, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(51, 48, 48, 0.9);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.desc-para{
+    font-size: 1.4em !important;
+}
+.desc-city{
+    font-size: 1em !important;
+}
+.date{
+    width: 30%;
+    height: 100%;
+    background-color: #b69124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-left: 20px;
+}
+
+@media (min-width: 641px){
+    h2{
+        font-size: 24px;
+    }
+    .area{
+        width: 60%;
+    }
+}
+
+@media (min-width: 801px){
+    h2{
+        font-size: 32px;
+    }
+    .area{
+        width: 40%;
+    }
+    form{
+        width: 70%;
+    }
+}
